@@ -729,7 +729,7 @@ class IPFLS:
 
                 # compute the search direction
                 H = self.reghess(self.hess(x, s, lda, z))
-                B = -self.grad(x, s, lda)
+                B = - self.grad(x, s, lda)
                 dk = spsolve(H, B).reshape((B.size,))
                 dx = dk[:self.nvar]
                 dl = dk[(self.nvar+self.niq):]
@@ -1242,7 +1242,7 @@ def main():
             d2h = csr_matrix(d2h)
             return(d2h)
         
-        a = np.array([1.0, 2.0, 3.0]);
+        a = np.array([1.0, 2.0, 3.0])
         f_fcn = lambda x: f_func(x, a)
         x0 = np.random.randn(3).astype(float_dtype)
         p = IPFLS(x0=x0,
