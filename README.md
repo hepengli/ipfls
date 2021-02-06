@@ -1,5 +1,5 @@
 # ipopt
-This is a Python implemetationa of the IPOPT optimization toolbox using a prime-dual interior-point algorithm with a filter line-search method for nonlinear programming. The problem is supposed to formulate in the following expression:
+This is a Python implemetationa of the IPOPT optimization toolbox using a prime-dual interior-point algorithm with a filter line-search method [1] for nonlinear programming. The problem is supposed to formulate in the following expression:
 
         min f(x)
          x
@@ -10,3 +10,5 @@ This is a Python implemetationa of the IPOPT optimization toolbox using a prime-
         h(x) <= 0           (nonlinear inequalities)
         l <= A*x <= u       (linear constraints)
         xmin <= x <= xmax   (variable bounds)
+
+[1] Wächter, A., Biegler, L. On the implementation of an interior-point filter line-search algorithm for large-scale nonlinear programming. Math. Program. 106, 25–57 (2006). https://doi.org/10.1007/s10107-004-0559-y
