@@ -1,4 +1,4 @@
-# ipopt
+# ipfls
 This is a Python implemetationa of the IPOPT optimization toolbox using a prime-dual interior-point algorithm with a filter line-search method [1] for nonlinear programming. The problem is supposed to formulate in the following expression:
 
         min f(x)
