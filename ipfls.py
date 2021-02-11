@@ -1252,5 +1252,6 @@ def main():
                   float_dtype=float_dtype)
         x, s, lda, z, fval, signal = p.solve()
         print(x)
+
 if __name__ == '__main__':
     main()
